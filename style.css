@@ -32,7 +32,12 @@ body.correct {
 .correct-answer-statment {
     opacity: 0%;
 }
-
+#trueAnswer{
+    opacity: 0%
+    }
+#trueAnswer.correct {
+    opacity:100%
+}
 
 /* .correct {
     width: 100%;
@@ -48,6 +53,7 @@ body.wrong {
 div.wrong {
    --opacity: 100%;
 }
+
 
 .container{
     width: 800px;
@@ -90,3 +96,4 @@ div.wrong {
     justify-content: center;
     align-items: center;
 }
+
