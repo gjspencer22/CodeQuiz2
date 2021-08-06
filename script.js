@@ -89,27 +89,26 @@ function selectAnswer(e) {
     nextButton.classList.remove('hide')
 }
 
-function correctAnswer() {
+// function correctAnswer() {
 
-    document.getElementById("answer").textContent = "Correct!"
-}
-function incorrect() {
-    document.getElementById("answer").textContent = ""
-    document.getElementById("answer").textContent = "Incorrect! :("
-    count = count - 1;
-}
+//     document.getElementById("answer").textContent = "Correct!"
+// }
+// function incorrect() {
+    
+//     count = count - 1;
+// }
 
 function setStatusClass(element, correct) {
     clearStatusClass(element)
-    if (correct=true) {
+    if (correct) {
         element.classList.add('correct')
-        correctAnswer()
-        // blank()
+        // correctAnswer()
     }
 
-    if (correct=false) {
+    else {
         element.classList.add('wrong')
-        incorrect()
+        count = count - 1;
+        // incorrect()
 
     }
     function clearStatusClass(element) {
@@ -128,12 +127,12 @@ function setStatusClass(element, correct) {
 // document.getElementById("oy").textContent = "oy"
 // correctAnswer();
 // }
-function tester(element, correct) {
+// function tester(element, correct) {
    
-    if (correct) {
-        // correctAnswer();
-    }
-}
+//     if (correct) {
+//         // correctAnswer();
+//     }
+// }
 const questions = [
     {
         question: 'Arrays in Javascript can be used to store what?',
